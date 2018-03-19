@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\.android\build-cache\4c05b338d4ef16d3024862f79af833c8b3cee2ad\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="379a48c2da13ffb7ec7134f2c715663834357670">
+        <dex dex="G:\work_space\android\test\app\build\intermediates\pre-dexed\debug\classes_de8e2348c063d44adbdcd19465a3d5f5e58c4e91.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.jakewharton\butterknife-annotations\8.8.1\bc373fb6bc7bca3035041b924f158fd2b946ee8d\butterknife-annotations-8.8.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="bc373fb6bc7bca3035041b924f158fd2b946ee8d">
+        <dex dex="G:\work_space\android\test\app\build\intermediates\pre-dexed\debug\butterknife-annotations-8.8.1_effad51e1b924a983cf91438469a33332a23c034.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\.android\build-cache\e106d564899eb4c869b479c55879247c88177448\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="6a2bcb61342d09fe9acf55c9daf63961c8866cc0">
+        <dex dex="G:\work_space\android\test\app\build\intermediates\pre-dexed\debug\classes_2d727575e3b5cc847192df30cd9244e3ecaf9fe6.jar" />
+    </item>
+
+</items>
