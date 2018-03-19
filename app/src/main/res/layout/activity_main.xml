@@ -28,6 +28,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="ToolbarActivity"/>
+            <Button
+                android:id="@+id/id_webview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="webView"/>
         </LinearLayout>
     </ScrollView>
 

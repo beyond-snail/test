@@ -19,6 +19,8 @@ public class MainActivity extends AppCompatActivity {
     Button idNotification;
     @BindView(R.id.ToolbarActivity)
     Button ToolbarActivity;
+    @BindView(R.id.id_webview)
+    Button idWebview;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         ButterKnife.bind(this);
     }
 
-    @OnClick({R.id.id_cardView, R.id.id_Notification, R.id.ToolbarActivity})
+    @OnClick({R.id.id_cardView, R.id.id_Notification, R.id.ToolbarActivity, R.id.id_webview})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.id_cardView:
@@ -38,6 +40,9 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.ToolbarActivity:
                 startActivity(new Intent(this, ToolbarActivity.class));
+                break;
+            case R.id.id_webview:
+                startActivity(new Intent(this, WebViewActivity.class));
                 break;
         }
     }

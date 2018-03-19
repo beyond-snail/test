@@ -1,0 +1,44 @@
+<html>
+<meta charset="utf-8"/>
+<title>hehe</title>
+<body>
+<input type="text" id="tx" /><br/>
+<input type="button" id="btn1" value="把文本框中的值toast出来" onclick="javascript:show()"/><br/>
+
+<input type="button" id="btn2" value="设置原生文本并回调alert出来一句话" onclick="javascript:setWithCallback()"/><br/>
+
+<script>
+
+    var callbacks=[];
+    var index = 0;
+
+    //直接调用原生方法。公司service.js里面的nativeCall的一个参数方法就是这个机制
+    function show(){
+        var tx = document.getElementById("tx");
+        demo.toast(tx.value);
+    }
+
+    //设置把html页面的数据传递到原生文本框，然后再利用回调获取原生页面的数据，公司service.js里的nativeCall的两个以上参数方法都是这种机制
+    function setWithCallback() {
+         callbacks[index] = function(data) {
+            alert(data);
+         };
+         var tx = document.getElementById("tx");
+         demo.setTitleAndCallback(tx.value,index);
+    }
+
+    function setText (text) {
+        var tx = document.getElementById("tx");
+        tx.value=text;
+    }
+
+    function getText () {
+        var tx = document.getElementById("tx");
+        demo.setTitle(tx.value);
+    }
+</script>
+
+
+
+</body>
+</html>

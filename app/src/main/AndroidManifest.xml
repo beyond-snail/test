@@ -16,16 +16,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".CardViewActivity">
-        </activity>
-        <activity
-            android:name=".MyNotificationActivity">
-        </activity>
+        <activity android:name=".CardViewActivity"></activity>
+        <activity android:name=".MyNotificationActivity"></activity>
         <activity
             android:name=".ToolbarActivity"
-            android:screenOrientation="portrait">
-        </activity>
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".WebViewActivity"></activity>
     </application>
 
 </manifest>
